@@ -39,10 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
+    return const Scaffold(
       body: Center(
-
           child: SpotlightEffect(
             spotlightColor: Colors.red, // Adjust spotlight color
             child: BlogPost(
@@ -56,8 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   '\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas tincidunt'
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas tincidunt',
               date: '2022-10-10',
-
-
             ),
           )
       ),

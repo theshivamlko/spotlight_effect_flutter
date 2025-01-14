@@ -29,7 +29,6 @@ class _SpotlightEffectState extends State<SpotlightEffect> {
       },
       child: Stack(
         children: [
-
           ClipRect(
             child: widget.child,
           ),
@@ -86,6 +85,22 @@ class _BackgroundPainter extends CustomPainter {
     path.addOval(Rect.fromCircle(center: position, radius: size.width / 2));
 
     path.fillType = PathFillType.evenOdd; // This is key for the cutout
+
+
+
+    final gradient = RadialGradient(
+      colors: [
+        Colors.transparent, // Transparent at the center
+        color, // Color at the edges
+      ],
+      stops: [0.0, 1.0],
+    ).createShader(
+      Rect.fromCircle(center: position, radius: radius),
+    );
+
+    paint.shader = gradient;
+    canvas.drawCircle(position, radius, paint);
+
 
     canvas.drawPath(path, paint2,);
   }
