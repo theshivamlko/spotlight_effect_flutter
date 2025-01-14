@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 
 class SpotlightEffect extends StatefulWidget {
   final Widget child;
-  final Color spotlightColor;
+  final Color spotlightColor=Colors.black;
   final double intensity;
 
   const SpotlightEffect({
     Key? key,
     required this.child,
-    this.spotlightColor = Colors.black,
     this.intensity = 0.7,
   }) : super(key: key);
 
