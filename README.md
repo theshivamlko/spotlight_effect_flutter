@@ -1,8 +1,29 @@
-# spotlight_effect_flutter
+# Spotlight Effect in Flutter
 
-A new Flutter project.
+### Usage
 
-## Getting Started
+``` 
+SpotlightEffect(
+        child: YourUIWidget(),
+    )
+```
+
+
+## Demo of Spotlight Effect in Flutter
+
+adding spotlight effect to a widget in flutter
+
+![spotlight_effect_flutter_demo.gif](spotlight_effect_flutter_demo.gif)
+
+
+
+## Social Links
+
+- [LinkedIn](https://www.linkedin.com/in/codewithprashant)
+- [Instagram](https://instagram.com/navokitech)
+- [LinkTree](https://linktr.ee/theshivamlko)
+
+
 
 This project is a starting point for a Flutter application.
 
